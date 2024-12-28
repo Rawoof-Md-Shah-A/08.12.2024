@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Request</title>
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  .form-container {
+    max-width: 400px;
+    margin: 0 auto;
+        padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    text-align: center;
+    color: navy;
+  }
+  label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+  }
+  input, select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 4px;
+  }
+  input[type="checkbox"], input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+  }
+  button {
+    background-color: rgb(4, 40, 245);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: rgb(4, 52, 197);
+  }
+</style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Software Request</h1>
+    <form>
+      <label for="name">Name <font color = "red">*</font></label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="employee-id">Employee ID <font color = "red">*</font></label>
+      <input type="text" id="employee-id" name="employee-id" required>
+
+      <label for="email">Email <font color = "red">*</font></label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mobile">Mobile No / Extn. No</label>
+      <input type="text" id="mobile" name="mobile">
+
+      <label>Which software do you require? <font color = "red">*</font></label>
+      <input type="checkbox" id="software-a" name="software" value="Software A"> <font color="navy"> Software A</font><br>
+      <input type="checkbox" id="software-b" name="software" value="Software B"> <font color="navy"> Software B</font><br>
+      <input type="checkbox" id="software-c" name="software" value="Software C"> <font color="navy"> Software C </font>     
+
+      <label>How urgently do you need it? <font color = "red">*</font></label>
+      <input type="radio" id="asap" name="urgency" value="asap" required><font color="navy">  As soon as possible</font><br>
+      <input type="radio" id="2-3-weeks" name="urgency" value="2-3-weeks"><font color="navy"> Within 2 to 3 weeks</font><br>
+      <input type="radio" id="no-hurry" name="urgency" value="no-hurry"><font color="navy"> I'm in no hurry</font>
+
+      <button type="submit">Request</button>
+    </form>
+  </div>
+</body>
+</html>
